@@ -2,7 +2,7 @@
 {
   const todos = [];
 
-  const listRiset = () => {
+  const listReset = () => {
     const lists = document.querySelectorAll(`tr`)
     lists.forEach(function (list, i) {
       if (i > 0) {
@@ -39,7 +39,7 @@
       workBtntd.appendChild(workBtn);
       workBtn.addEventListener(`click`, () => {
         todos[i].statusValue++;
-        listRiset();
+        listReset();
         addList();
       });
 
@@ -54,7 +54,7 @@
       delBtntd.appendChild(delBtn);
       delBtn.addEventListener(`click`, () => {
         todos.splice(i, 1);
-        listRiset();
+        listReset();
         addList();
       });
     }
@@ -67,7 +67,7 @@
       statusValue: 1,
     }
     todos.push(todo);
-    listRiset();
+    listReset();
     addList();
     document.getElementById(`add-text`).value = ``
   });
