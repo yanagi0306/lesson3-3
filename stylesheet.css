@@ -1,0 +1,25 @@
+
+h1 {
+  font-family:serif;
+  font-size:30px;
+}
+p {
+  font-family:serif;
+}
+h2 {
+  font-family:serif;
+}
+table {
+  font-family:serif;
+}
+input {
+  font-family:serif;
+}
+.header-list{
+  font-weight:bold;
+}
+.btn{
+  margin-left:5px;
+  border-radius:5px;
+  
+}
